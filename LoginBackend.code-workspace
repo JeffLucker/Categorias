@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../LoginBackend"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "LoginBackend"
+	}
+}

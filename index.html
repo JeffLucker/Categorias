@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amenities</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+        <div class="nav-bar">
+            <div class="header-principal">
+                <img id="header-logo" src="imagens/logo-ht.png" alt="logo do hotel">
+                <h2>Portal da <br> governança</h2>
+                <div class="burguer">
+                    <img style="padding: 0px 10px;" onclick="displayMenu()" id="hamburguer-menu" src="imagens/bars.png" alt="">
+                    <p id="menu">menu</p>
+                </div>
+
+            </div>
+                <div class="menu-list">
+                    <ul id="menu-list">
+                        <a href="#amenities-header"><li ><i class="fa-solid fa-soap"></i> Amenities</li></a>
+                        <a href="#header-frigobar"><li ><i class="fa-solid fa-bottle-water"></i> Frigobar</li></a>
+                        <a href="#header-about"><li ><i class="fa-solid fa-circle-info"></i> Sobre as UHs</li></a>
+                        <a href="#header-relatório"><li ><i class="fa-solid fa-clipboard-list"></i> Guia do relatório</li></a>
+                        <a href="#horários"><li ><i class="fa-solid fa-clock"></i> Horários de funcionamento</li></a>
+                        <a href="#header-produtos"><li ><i class="fa-solid fa-spray-can-sparkles"></i> Produtos de limpeza</li></a>
+                        <a href="#header-mapa"><li ><i class="fa-solid fa-map"></i> Mapa do hotel</li></a>
+                    </ul>
+                    <img id="crab" src="imagens/crab.png" alt="">
+            </div>
+            <img id="ondas" src="imagens/ondas.png" alt="">
+        </div>
+
+        <div id="amenities-header" class="header">
+            <img id="logo-ht" src="imagens/logo-ht.png" alt="">
+            <h3>Apartamento luxo</h3>
+            <img id="coco" src="imagens/coqueiro-1.png" alt="">
+        </div>
+        <div class="carrossel-aptos">
+            <header id="categoria-apartamento!">
+                Quarto
+            </header>
+            <div class="fotos">
+
+                <div class="bolsao">
+                    <img onclick="passBackwards()" id="backwards" src="imagens/pass-backwards.png" alt="">
+                    <img id="foto-quarto" src="imagens/Jirlane/quarto-luxo.jpg" alt="">
+                    <img onclick="passFoward()" id="foward" src="imagens/pass-foward.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="amenities">
+            <div>
+                <img id="bolhas" src="imagens/coqueiro-2.png" alt="">
+                <img id="palha-móvel" src="imagens/coqueiro-2.png" alt="">
+                <ul class="amen" id="amenities-standard">
+                    <li>Cama de casal King Size</li>
+                    <li>Sofá</li>
+                    <li>Mesinha de cabeceira</li>
+                    <li>Cadeira</li>
+                    <li>Mesa com cadeira</li>
+                    <li>Cômoda</li>
+                    <li>TV 55"</li>
+                </ul>
+                <ul class="amen" id="amenities-luxo">
+                    <li>03 águas de 1,5l</li>
+                    <li>01 água com gás</li>
+                    <li>01 Coca Cola normal</li>
+                    <li>01 Coca Cola zero</li>
+                    <li>01 Guaraná normal</li>
+                    <li>01 Guaraná zero</li>
+                    <li>02 Cerveja Spaten</li>
+                    <li>02 Cerveja Amstel</li>
+
+                </ul>
+                <ul class="amen" id="amenities-bng-std">
+                    <li>Cabides</li>
+                    <li>Ferro e tábua de passar</li>
+                    <li>Cofre</li>
+                    <li>Lista de lavanderia</li>
+                </ul>
+                <ul class="amen" id="amenities-bng-lx">
+                    <li>Secador de cabelo</li>
+                    <li>Amenidades: Dispencer com loção hidratante, shampoo, condicionador, sabonete líquido, sabonete em barra e touca</li>
+                    <li>Espelho de aumento</li>
+                    <li>Telefone</li>
+
+                </ul>
+                <ul class="amen" id="amenities-bng-lx">
+                    <li>02 Cadeiras</li>
+                    <li>01 Mesa</li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div id="amenities-header" class="header">
+            <img id="logo-ht" src="imagens/logo-ht.png" alt="">
+            <h3>Apartamento standard</h3>
+            <img id="coco" src="imagens/coqueiro-1.png" alt="">
+        </div>
+        <div class="carrossel-aptos">
+            <header id="categoria-apartamento!2">
+                Quarto
+            </header>
+            <div class="fotos">
+
+                <div class="bolsao">
+                    <img onclick="passBackwards2()" id="backwards" src="imagens/pass-backwards.png" alt="">
+                    <img id="foto-quarto2" src="imagens/standard/quarto-luxo.jpg" alt="">
+                    <img onclick="passFoward2()" id="foward" src="imagens/pass-foward.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="amenities">
+            <div>
+                <img id="bolhas" src="imagens/coqueiro-2.png" alt="">
+                <img id="palha-móvel" src="imagens/coqueiro-2.png" alt="">
+                <ul class="amen2" id="amenities-standard">
+                    <li>01 cama de casal Queen + 01 cama de solteiro</li>
+                    <li>01 criado mudo</li>
+                    <li>01 sofá</li>
+                    <li>01 mesa</li>
+                    <li>01 comôda</li>
+                    <li>01 TV 55"</li>
+                    <li>Espelho</li>
+                </ul>
+                <ul class="amen2" id="amenities-luxo">
+                    <li>03 águas de 1,5l</li>
+                    <li>01 água com gás</li>
+                    <li>01 Coca Cola normal</li>
+                    <li>01 Coca Cola zero</li>
+                    <li>01 Guaraná normal</li>
+                    <li>01 Guaraná zero</li>
+                    <li>02 Cerveja Amstel</li>
+
+                </ul>
+                <ul class="amen2" id="amenities-bng-std">
+                    <li>Cabides</li>
+                    <li>Cofre</li>
+                    <li>Lista de lavanderia</li>
+                </ul>
+                <ul class="amen2" id="amenities-bng-lx">
+                    <li>Secador de cabelo</li>
+                    <li>Amenidades: Dispencer com loção hidratante, shampoo, condicionador, sabonete líquido, sabonete em barra e touca</li>
+                    <li>Espelho de aumento</li>
+                    <li>Telefone</li>
+            </div>
+        </div>
+
+        <div id="amenities-header" class="header">
+            <img id="logo-ht" src="imagens/logo-ht.png" alt="">
+            <h3>Bangalô standard</h3>
+            <img id="coco" src="imagens/coqueiro-1.png" alt="">
+        </div>
+        <div class="carrossel-aptos">
+            <header id="categoria-apartamento!4">
+                Quarto
+            </header>
+            <div class="fotos">
+
+                <div class="bolsao">
+                    <img onclick="passBackwards4()" id="backwards" src="imagens/pass-backwards.png" alt="">
+                    <img id="foto-quarto4" src="imagens/blx/quarto-luxo.jpg" alt="">
+                    <img onclick="passFoward4()" id="foward" src="imagens/pass-foward.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="amenities">
+            <div>
+                <img id="bolhas" src="imagens/coqueiro-2.png" alt="">
+                <img id="palha-móvel" src="imagens/coqueiro-2.png" alt="">
+                <ul class="amen4" id="amenities-standard">
+                    <li>01 cama de casal Queen + 01 cama solteiro</li>
+                    <li>01 mesa de cabeceira</li>
+                    <li>01 mesa</li>
+                </ul>
+                <ul class="amen4" id="amenities-luxo">
+                    <li>03 águas de 1,5l</li>
+                    <li>01 água com gás</li>
+                    <li>01 Coca Cola Normal</li>
+                    <li>01 Coca Cola Zero</li>
+                    <li>01 Guaraná Normal</li>
+                    <li>01 Guaraná Zero</li>
+                    <li>02 Cervejas Amstel</li>
+
+                </ul>
+                <ul class="amen4" id="amenities-bng-std">
+                    <li>Cabides</li>
+                    <li>Cofre</li>
+                    <li>Lista de lavanderia</li>
+                
+                </ul>
+                <ul class="amen4" id="amenities-bng-lx">
+                    <li>Secador de cabelo</li>
+                    <li>Amenidades: Dispencer com loção hidratante, shampoo, condicionador, sabonete líquido, sabonete em barra e touca</li>
+                    <li>Espelho de aumento</li>
+                    <li>Telefone</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="amenities-header" class="header">
+            <img id="logo-ht" src="imagens/logo-ht.png" alt="">
+            <h3>Bangalô luxo</h3>
+            <img id="coco" src="imagens/coqueiro-1.png" alt="">
+        </div>
+        <div class="carrossel-aptos">
+            <header id="categoria-apartamento!3">
+                Quarto
+            </header>
+            <div class="fotos">
+
+                <div class="bolsao">
+                    <img onclick="passBackwards3()" id="backwards" src="imagens/pass-backwards.png" alt="">
+                    <img id="foto-quarto3" src="imagens/blx/quarto-luxo.jpg" alt="">
+                    <img onclick="passFoward3()" id="foward" src="imagens/pass-foward.png" alt="">
+                </div>
+
+            </div>
+        </div>
+        <div class="amenities">
+            <div>
+                <img id="bolhas" src="imagens/coqueiro-2.png" alt="">
+                <img id="palha-móvel" src="imagens/coqueiro-2.png" alt="">
+                <ul class="amen3" id="amenities-standard">
+                    <li>01 cama de casal King Size</li>
+                    <li>01 criado mudo</li>
+                    <li>01 aparador</li>
+                    <li>01 telefone</li>
+                    <li>01 TV 55"</li>
+                </ul>
+                <ul class="amen3" id="amenities-luxo">
+                    <li>01 sofá</li>
+                    <li>01 aparador</li>
+                    <li>01 TV 55"</li>
+                    <li>01 frigobar</li>
+                    <li>Mesinhas de canto</li>
+
+                </ul>
+                <ul class="amen3" id="amenities-bng-std">
+                    <li>Cabides</li>
+                    <li>Ferro com tábua de passar</li>
+                    <li>Cofre</li>
+                    <li>Lista de lavanderia</li>
+                    <li>Rede</li>
+                </ul>
+                <ul class="amen3" id="amenities-bng-lx">
+                    <li>Secador de cabelo</li>
+                    <li>Amenidades: Dispencer com loção hidratante, shampoo, condicionador, sabonete líquido, sabonete em barra e touca</li>
+                    <li>Espelho de aumento</li>
+                    <li>Telefone</li>
+                </ul>
+                <ul class="amen3" id="amenities-bng-lx">
+                    <li>01 mesa</li>
+                    <li>02 cadeiras</li>
+                    <li>01 espreguiçadeira</li>
+                </ul>
+            </div>
+        </div>
+          <button id="backToTop" class="back-to-top">↑</button>
+
+
+        <script src="script.js"></script>
+    
+</body>
+</html>
